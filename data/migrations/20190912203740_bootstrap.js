@@ -25,7 +25,7 @@ exports.up = function(knex) {
         .integer('ingredient_id')
         .unsigned()
         .references('id')
-        .inTable('actors')
+        .inTable('ingredient')
         .onDelete('CASCADE')
         .onUpdate('CASCADE');
       tbl.string('quantity').notNullable();
